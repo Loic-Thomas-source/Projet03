@@ -1,8 +1,12 @@
-h1,h2,p
+h1
 {
     text-align: center;
 }
 
+h2
+{
+    text-align: left;
+}
 /* On travaille sur la balise body, donc sur TOUTE la page */
 body
 {
@@ -15,33 +19,15 @@ div
     float:left;
 }
 
-#right
-{
-    float:right;
-}
-
-#cadre
-{
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-}
-
 header
 {
 	float:center;
 }
 
-#left
-{
-    float:left;
-}
-
 h3
-    {  
-        vertical-align:middle;
-    }
+{  
+    vertical-align:middle;
+}
 
 hr
 {
@@ -63,5 +49,27 @@ hr
 
 h1,h2,h3,p /* Utilisation de la police qu'on vient de définir sur les titres */
 {
-    font-family: 'cac_champagneregular', "Comic sans MC" , serif;
+    font-family: 'cac_champagneregular', "Comic Sans MS" , serif;
+}
+
+.grille
+{
+    border: 2px solid black;
+    padding: 5px;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    
+}
+
+article
+{
+    border: 2px solid black;
+    margin: 5px;
+}
+
+p
+{
+    float: right;
 }
