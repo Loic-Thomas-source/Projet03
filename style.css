@@ -38,18 +38,9 @@ hr
     border: none; /*on supprime le style par défaut*/
 }
 
-@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
-    font-family: 'cac_champagneregular';
-    src: url('cac_champagne-webfont.eot');
-    src: url('cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
-         url('cac_champagne-webfont.woff') format('woff'),
-         url('cac_champagne-webfont.ttf') format('truetype'),
-         url('cac_champagne-webfont.svg#cac_champagneregular') format('svg');
-}
-
-h1,h2,h3,p /* Utilisation de la police qu'on vient de définir sur les titres */
+h1,h2,h3,p /* Utilisation de la police */
 {
-    font-family: 'cac_champagneregular', "Comic Sans MS" , serif;
+    font-family:"Comic Sans MS" , serif;
 }
 
 .grille
