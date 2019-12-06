@@ -47,21 +47,21 @@
     </section>
     
     <section class = "grille">
-        <article> <img src = "protectpeople1.png" alt="" /> <p> <a href = "protectpeople.html">lire la suite </a></p>  <p> Protectpeople finance la solidarité nationale.
+        <article> <img src = "protectpeople1.png" alt="" /> <p> <a href = "protectpeople.html">lire la suite </a></p>  <h3> Protectpeople finance la solidarité nationale.
                 Nous appliquons le principe édifié par la Sécurité sociale française en 1945 : permettre à chacun de 
-                bénéficier d’une protection sociale.</p> </article>
-        <article> <img src = "CDE1.png" alt="" /> <p> <a href = "CDE.html">Lire la suite </a></p> <p> La CDE (Chambre Des Entrepreneurs) accompagne les entreprises dans
+                bénéficier d’une protection sociale.</h3> </article>
+        <article> <img src = "CDE1.png" alt="" /> <p> <a href = "CDE.html">Lire la suite </a></p> <h3> La CDE (Chambre Des Entrepreneurs) accompagne les entreprises dans
              leurs démarches de formation. 
                 Son président est élu pour 3 ans par ses pairs, chefs d’entreprises et présidents des CDE.
-                </p></article>
-        <article> <img src = "Dsa_france1.png" alt="" /> <p> <a href = "DSA.html">Lire la suite</a></p> <p> Dsa France accélère la croissance du territoire et s’engage 
+                </h3></article>
+        <article> <img src = "Dsa_france1.png" alt="" /> <p> <a href = "DSA.html">Lire la suite</a></p> <h3> Dsa France accélère la croissance du territoire et s’engage 
             avec les collectivités territoriales.
                 Nous accompagnons les entreprises dans les étapes clés de leur évolution.<br/>
-                Notre philosophie : s’adapter à chaque entreprise.</p></article>
-        <article> <img src = "formationetco1.png" alt="" /> <p> <a href = "formation.html">Lire la suite</a></p> <p> Formation&co est une association française présente sur
+                Notre philosophie : s’adapter à chaque entreprise.</h3></article>
+        <article> <img src = "formationetco1.png" alt="" /> <p> <a href = "formation.html">Lire la suite</a></p> <h3> Formation&co est une association française présente sur
              tout le territoire.
                 Nous proposons à des personnes issues de tout milieu de devenir entrepreneur grâce à un crédit<br/> et un accompagnement
-                 professionnel et personnalisé.</p></article>
+                 professionnel et personnalisé.</h3></article>
 
              
     </section>
