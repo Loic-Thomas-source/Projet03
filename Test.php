@@ -8,7 +8,7 @@
     
 	<div ID="logo">
     <p>
-            <a href="logo.jpg"><img src="logo_mini.jpg" alt="" /></a> <!--Logo gbaf -->
+            <a href="logo.jpg"><img src="logo_mini.jpg" alt="" /></a> <!--Logo GBAF -->
     </p>
     </div>
 
@@ -21,8 +21,8 @@
     <h1>LE GBAF</h1>
     <center><p>Le GBAF est le représentant de la profession bancaire et des assureurs sur tous
             les axes de la réglementation financière française. Sa mission est de promouvoir
-            l'activité bancaire à l’échelle nationale. C’est aussi un interlocuteur privilégié des
-            pouvoirs publics.<br>Pour remédier à cela, le GBAF souhaite proposer aux salariés des grands groupes
+            l'activité bancaire à l’échelle nationale.<br> C’est aussi un interlocuteur privilégié des
+            pouvoirs publics.Pour remédier à cela, le GBAF souhaite proposer aux salariés des grands groupes
             français un point d’entrée unique, répertoriant un grand nombre d’informations
             sur les partenaires et acteurs du groupe ainsi que sur les produits et services
             bancaires et financiers.
@@ -37,19 +37,19 @@
     
         <h2>
             Nos acteurs partenaires : 
-        <h2>
-        <p>    
+        </h2>
+            
         <ul>
             <li>Formation&co est une association française présente sur tout le territoire.</li>
             <li>Protectpeople finance la solidarité nationale.</li>
             <li>Dsa France accélère la croissance du territoire et s’engage avec les collectivités territoriales.</li>
             <li>La CDE accompagne les entreprises dans leurs démarches de formation. </li>
         </ul>
-        </p>
+        
 	
     </section>
     
-    <section class = "grille">
+    <section class = "grille"> <!-- Tableau Partenaires -->
         <article> <img src = "protectpeople1.png" alt="" /> <p> <a href = "protectpeople.html">lire la suite </a></p>  <p> Protectpeople finance la solidarité nationale.
                 Nous appliquons le principe édifié par la Sécurité sociale française en 1945 : permettre à chacun de 
                 bénéficier d’une protection sociale.</p> </article>
