@@ -1,12 +1,8 @@
 h1
 {
-    text-align: center;
+    text-align: center; /* On aligne h1 */
 }
 
-h2
-{
-    text-align: left;
-}
 /* On travaille sur la balise body, donc sur TOUTE la page */
 body
 {
@@ -14,22 +10,7 @@ body
     color: black; /* Le texte de la page sera noir */
 }
 
-div
-{
-    float:left;
-}
-
-header
-{
-	float:center;
-}
-
-h3
-{  
-    vertical-align:middle;
-}
-
-hr
+hr /* Ligne noir de séparation */
 {
     margin: 100px auto;
     width: 100%;
@@ -38,12 +19,12 @@ hr
     border: none; /*on supprime le style par défaut*/
 }
 
-h1,h2,h3,p /* Utilisation de la police */
+h1,h2,h3,p /* Utilisation de la police Comic Sans MS */
 {
     font-family:"Comic Sans MS" , serif;
 }
 
-.grille
+.grille /* Création d'un tableau */
 {
     border: 2px solid black;
     padding: 5px;
@@ -60,7 +41,7 @@ article
     margin: 5px;
 }
 
-p
+p /* On aligne le texte à gauche de l'image */
 {
     float: right;
 }
