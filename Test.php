@@ -7,9 +7,9 @@
     
     
 	<div ID="logo">
-    <p>
-            <a href="logo.jpg"><img src="logo_mini.jpg" alt="" /></a> <!--Logo GBAF -->
-    </p>
+        <p>
+            <img src="logo_mini.jpg" alt="" /> <!--Logo GBAF -->
+        </p>
     </div>
 
     
@@ -18,7 +18,7 @@
 </header>
 <body>
 	<section>
-    <h1>LE GBAF</h1>
+    <h1>LE GBAF</h1> <!-- Premier titre -->
     <center><p>Le GBAF est le représentant de la profession bancaire et des assureurs sur tous
             les axes de la réglementation financière française. Sa mission est de promouvoir
             l'activité bancaire à l’échelle nationale.<br> C’est aussi un interlocuteur privilégié des
@@ -27,15 +27,13 @@
             sur les partenaires et acteurs du groupe ainsi que sur les produits et services
             bancaires et financiers.
             Chaque salarié pourra ainsi poster un commentaire et donner son avis.</p></center>
-        <p>
+        <a>
             <img src = "image.jpg" width="1890px" height="300px" alt= "illustration" /> <!-- Photo illustration -->
-        </p>
+        </a>
 
-	
-
-    <hr> <!-- Ligne de séparation -->
+	    <hr> <!-- Ligne de séparation -->
     
-        <h2>
+        <h2> <!-- Deuxième titre -->
             Nos acteurs partenaires : 
         </h2>
             
@@ -49,22 +47,32 @@
 	
     </section>
     
-    <section class = "grille"> <!-- Tableau Partenaires -->
-        <article> <img src = "protectpeople1.png" alt="" /> <p> <a href = "protectpeople.html">lire la suite </a></p>  <p> Protectpeople finance la solidarité nationale.
-                Nous appliquons le principe édifié par la Sécurité sociale française en 1945 : permettre à chacun de 
-                bénéficier d’une protection sociale.</p> </article>
-        <article> <img src = "CDE1.png" alt="" /> <p> <a href = "CDE.html">Lire la suite </a></p> <p> La CDE (Chambre Des Entrepreneurs) accompagne les entreprises dans
-             leurs démarches de formation. 
-                Son président est élu pour 3 ans par ses pairs, chefs d’entreprises et présidents des CDE.
-                </p></article>
-        <article> <img src = "Dsa_france1.png" alt="" /> <p> <a href = "DSA.html">Lire la suite</a></p> <p> Dsa France accélère la croissance du territoire et s’engage 
+    <section class = "grille"> <!-- On crée un tableau -->
+        <article> <img src = "protectpeople1.png" alt="" /> <p> <a href = "protectpeople.html">Lire la suite </a></p>
+            <p> Protectpeople finance la solidarité nationale.
+            Nous appliquons le principe édifié par la Sécurité sociale française en 1945 : permettre à chacun de 
+            bénéficier d’une <br/>protection sociale, ouvert à tous.</p> </article>
+
+        <article> <img src = "CDE1.png" alt="" /> <p> <a href = "CDE.html">Lire la suite </a></p> 
+            <p> La CDE (Chambre Des Entrepreneurs)
+            accompagne les entreprises dans
+            leurs démarches de formation. 
+            Son président est élu pour 3 ans par ses pairs, chefs d’entreprises   <br/>et présidents  des CDE.</p></article>
+
+        <article> <img src = "Dsa_france1.png" alt="" /> <p> <a href = "DSA.html">Lire la suite</a></p> 
+            <p> Dsa France accélère la 
+            croissance du territoire et s’engage 
             avec les collectivités territoriales.
-                Nous accompagnons les entreprises dans les étapes clés de leur évolution.<br/>
-                Notre philosophie : s’adapter à chaque entreprise.</p></article>
-        <article> <img src = "formationetco1.png" alt="" /> <p> <a href = "formation.html">Lire la suite</a></p> <p> Formation&co est une association française présente sur
-             tout le territoire.
-                Nous proposons à des personnes issues de tout milieu de devenir entrepreneur grâce à un crédit<br/> et un accompagnement
-                 professionnel et personnalisé.</p></article>
+            Nous accompagnons les entreprises dans les étapes par clés de leur évolution.  <br/>
+            Notre philosophie : s’adapter à chaque entreprise.</p></article>
+
+        <article> <img src = "formationetco1.png" alt="" /> <p> <a href = "formation.html">Lire la suite</a></p> 
+            <p> Formation&co est
+            une association française présente sur
+            tout le territoire.
+            Nous proposons à des personnes issues de tout milieu de devenir entrepreneur grâce à un crédit<br/> et un accompagnement
+            professionnel et personnalisé. </p></article>
+
 
              
     </section>

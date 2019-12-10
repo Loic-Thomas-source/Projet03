@@ -10,6 +10,11 @@ body
     color: black; /* Le texte de la page sera noir */
 }
 
+div /* On aligne à gauche le logo */
+{
+    float: left;
+}
+
 hr /* Ligne noir de séparation */
 {
     margin: 100px auto;
@@ -19,12 +24,12 @@ hr /* Ligne noir de séparation */
     border: none; /*on supprime le style par défaut*/
 }
 
-h1,h2,h3,p /* Utilisation de la police Comic Sans MS */
+h1,h2,h3,p /* Utilisation de la police Time New Roman */
 {
-    font-family:"Comic Sans MS" , serif;
+    font-family:"Time New Roman" , serif;
 }
 
-.grille /* Création d'un tableau */
+.grille /* on mets en place un tableau */
 {
     border: 2px solid black;
     padding: 5px;
@@ -32,6 +37,7 @@ h1,h2,h3,p /* Utilisation de la police Comic Sans MS */
     /* grid-template-columns: repeat(2, 1fr); */
     grid-template-rows: 1fr;
     grid-gap: 10px;
+    width : 99%
     
 }
 
@@ -39,9 +45,17 @@ article
 {
     border: 2px solid black;
     margin: 5px;
+    
 }
 
-p /* On aligne le texte à gauche de l'image */
+
+p /* On aligne le texte à droite de l'image */
 {
-    float: right;
+    float:right;   
+    margin-right: 80px;    
+}
+
+p, li /* redimension de la police */
+{
+    font-size: 107%;
 }
