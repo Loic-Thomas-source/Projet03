@@ -1,0 +1,47 @@
+/* Sur tous types d'écran */
+@media all and (max-device-width: 1280px)
+{
+hr /* Ligne noir de séparation */
+{
+    margin: auto;
+    width: 200%;
+    height: 2px;
+    background-color: rgb(12, 12, 11);
+    border: none; /*on supprime le style par défaut*/
+}
+
+div
+{
+    float: none;
+}
+
+.grille
+{
+    flex-direction:column;
+}
+
+h1 /* On aligne h1 */
+{
+    text-align: center; 
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.présentation
+{
+    text-align: center;
+    border: none;
+}
+
+html
+{
+    width: 100%;
+    height: auto;
+}
+
+}

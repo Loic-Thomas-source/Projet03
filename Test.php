@@ -3,6 +3,8 @@
 <header>
     <meta charset = "utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
+     <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
     <title>GBAF</title>
     
     
@@ -19,14 +21,14 @@
 <body>
 	<section>
     <h1>LE GBAF</h1> <!-- Premier titre -->
-    <center><p>Le GBAF est le représentant de la profession bancaire et des assureurs sur tous
+    <div class = "présentation"><p>Le GBAF est le représentant de la profession bancaire et des assureurs sur tous
             les axes de la réglementation financière française. Sa mission est de promouvoir
             l'activité bancaire à l’échelle nationale.<br> C’est aussi un interlocuteur privilégié des
             pouvoirs publics.Pour remédier à cela, le GBAF souhaite proposer aux salariés des grands groupes
             français un point d’entrée unique, répertoriant un grand nombre d’informations
             sur les partenaires et acteurs du groupe ainsi que sur les produits et services
             bancaires et financiers.
-            Chaque salarié pourra ainsi poster un commentaire et donner son avis.</p></center>
+            Chaque salarié pourra ainsi poster un commentaire et donner son avis.</p></div>
         <a>
             <img src = "image.jpg" width="1890px" height="300px" alt= "illustration" /> <!-- Photo illustration -->
         </a>
