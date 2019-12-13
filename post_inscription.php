@@ -25,16 +25,24 @@
             {
                 
                 // INSERTION EN BASE
-                $sql = "INSERT INTO membres (nom, prenom, username, motdepasse)         VALUES (:nom, :prenom, :username, :motdepasse)";
-                $query = $bdd -> prepare($sql);
+                $reponse = $bdd -> prepare('INSERT INTO membres (nom, prenom, username, motdepasse, motdepasse_rep) VALUES (:nom, :prenom, :username, :motdepasse, :motdepasse_rep');
+                $reponse -> execute(array(
+                    'nom' => $nom,PDO::PARAM_STR,
+                    'prenom' => $prenom,PDO::PARAM_STR,
+                    'username' => $username,PDO::PARAM_STR,
+                    'motdepasse' => $motdepasse,PDO::PARAM_STR,
+                    'motdepasse_rep' => $motdepasse_rep,PDO::PARAM_STR
+                    ));
 
-                $query -> bindValue(":nom", $nom, PDO::PARAM_STR);
-                $query -> bindValue(":prenom", $prenom, PDO::PARAM_STR);
-                $query -> bindValue(":username", $username, PDO::PARAM_STR);
-                $query -> bindValue(":motdepasse", $motdepasse, PDO::PARAM_STR);
-                $query -> execute();
+                
 
-                echo "Vous êtes inscrit ! <a href='index.php'> Accueil</a>";
+                
+                   
+                
+
+                echo "Vous êtes inscrit ! <a href='Accueil.php'> Accueil</a>";
+
+                header("Refresh: 5;url=Accueil.php");
             }
             else
             {
@@ -53,9 +61,4 @@
         echo "Erreur de formulaire : 
             <a href='javascript:history.back()'>Retour</a>";
     }
-
-//Insertion du message à l'aide d'une requête préparée
-$_req = $bdd->prepare('INSERT INTO membres (nom, prenom, username, motdepasse, date_inscription) VALUES(?, ?)');
-$_req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['username'], $_POST['motdepasse'], $_POST['date_insciption']));
-
 ?>

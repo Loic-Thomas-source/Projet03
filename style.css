@@ -64,3 +64,9 @@ p, li /* redimension de la police */
 {
     font-size: 107%;
 }
+
+.deco /* On mais déconnecter à droite */
+{
+    float: right;
+}
+

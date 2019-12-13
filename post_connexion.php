@@ -10,7 +10,7 @@
         !empty($username) AND !empty($motdepasse)
     )
     {
-        $sql = "SELECT id, nom, prenom, motdepasse FROM membres
+        $sql = "SELECT ID, nom, prenom, motdepasse FROM membres
                 WHERE username = :username";
         $query = $bdd -> prepare($sql);
         $query -> bindValue(":username", $username, PDO::PARAM_STR);
@@ -23,25 +23,25 @@
         {
             // recup du mdp en base
             $motdepasse_base = $result['motdepasse'];
-            
+            if($motdepasse === $motdepasse_base)
             {
                 // je suis connecté
                 session_start();
                 $_SESSION = array(
-                    'id' => $result['id'],
-                    'username' => $result['username']
+                    'ID' => $result['ID'],
+                    'nom' => $result['nom']
                 );
 
-                echo "Vous êtes connecté ! <a href='index.php'> Accueil</a>";
+                echo "Vous êtes connecté ! <a href='Test.php'> Accueil</a>";
                 
-                header("Refresh: 3;url=index.php");
+                header("Refresh: 0;url=Test.php");
             }
-            else              
+            else
             {
-                echo  "Mauvais mdp ou username  <a href='javascript:history.back()'>Retour</a>";
+                echo  "Mauvais mdp ou Username  <a href='javascript:history.back()'>Retour</a>";
             }
         }
-       
+        
     }
     else
     {

@@ -40,8 +40,13 @@ img
 
 html
 {
-    width: 100%;
-    height: auto;
+    height: auto ;
+    width: auto;
+}
+
+p, li /* redimension de la police */
+{
+    font-size: 107%;
 }
 
 }

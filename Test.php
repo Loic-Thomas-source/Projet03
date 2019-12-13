@@ -1,3 +1,40 @@
+<?php
+    // index.php
+    session_start();
+    if(isset($_SESSION) AND !empty($_SESSION['ID']))
+    {
+      echo "Bonjour ". $_SESSION['nom'];
+    }
+    
+?>
+
+<?php
+    if(isset($_SESSION) AND !empty($_SESSION['ID']))
+    {
+?>
+
+<div class = "deco">
+    <a href="deconnexion.php">SE DECONNECTER</a>
+</div>
+
+>
+<?php
+    }
+    else
+    {
+?>
+
+<center>
+<div>
+    <a href="inscription.php">S'INSCRIRE</a>
+</div>
+<div>
+    <a href="connexion.php">SE CONNECTER</a>
+</div> </center>
+<?php
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <header>
