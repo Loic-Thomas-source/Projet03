@@ -10,6 +10,8 @@
     define("USERNAME", "");       // Username
     define("USER", "root");      // nom d'utilisateur
     define("PASSWORD", "");      // mot de passe
+    define("QUESTION", "");      // question secrète
+    define("REPONSE", "");       // réponse secrète
     define("DATE_INSCRIPTION", "");    // date d'inscription
 
     $db_options = array(

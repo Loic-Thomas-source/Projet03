@@ -7,7 +7,7 @@
 
     if(
         !empty($nom) AND !empty($prenom) AND !empty($username) AND !empty($motdepasse)
-        AND !empty($motdepasse_rep) AND !empty($rgpd)
+        AND !empty($motdepasse_rep) AND !empty($question) AND !empty($reponse) AND !empty($rgpd)
     )
     {
         // vérification de username
@@ -25,14 +25,18 @@
             {
                 
                 // INSERTION EN BASE
-                $reponse = $bdd -> prepare('INSERT INTO membres (nom, prenom, username, motdepasse, motdepasse_rep) VALUES (:nom, :prenom, :username, :motdepasse, :motdepasse_rep');
-                $reponse -> execute(array(
-                    'nom' => $nom,PDO::PARAM_STR,
-                    'prenom' => $prenom,PDO::PARAM_STR,
-                    'username' => $username,PDO::PARAM_STR,
-                    'motdepasse' => $motdepasse,PDO::PARAM_STR,
-                    'motdepasse_rep' => $motdepasse_rep,PDO::PARAM_STR
-                    ));
+                $sql = "INSERT INTO membres (nom, prenom, username, motdepasse, motdepasse_rep, question, reponse)         VALUES (:nom, :prenom, :username, :motdepasse, :motdepasse_rep, :question, :reponse)";
+                $query = $bdd -> prepare($sql);
+
+                $query -> bindValue(":nom", $nom, PDO::PARAM_STR);
+                $query -> bindValue(":prenom", $prenom, PDO::PARAM_STR);
+                $query -> bindValue(":username", $username, PDO::PARAM_STR);
+                $query -> bindValue(":motdepasse", $motdepasse, PDO::PARAM_STR);
+                $query -> bindValue(":motdepasse_rep", $motdepasse_rep, PDO::PARAM_STR);
+                $query -> bindValue(":question", $question, PDO::PARAM_STR);
+                $query -> bindValue(":reponse", $reponse, PDO::PARAM_STR);
+                $query -> execute();
+                    
 
                 
 

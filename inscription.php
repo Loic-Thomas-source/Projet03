@@ -16,7 +16,7 @@
     <!-- nom, prenom, username, mot de passe X 2, case RGPD -->
 
     <div>
-        Nom* : <br> <input type="text" name="nom" required> 
+        Nom* :  <input type="text" name="nom" required> 
     
         Prénom* : <input type="text" name="prenom" required> <br>
     
@@ -25,6 +25,10 @@
         Mot de passe* : <input type="password" name="motdepasse" required> <br>
     
         Répétition mdp* : <input type="password" name="motdepasse_rep" required> <br>
+
+        Question secrète* : <input type="text" name="question" required> <br>
+
+        Réponse à question secrète* : <input type="text" name="reponse" required> <br>
     
         RGPD* : <input type="checkbox" name="rgpd" required> 
         J'accepte la collecte de mes données personnelles 

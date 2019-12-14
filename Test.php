@@ -1,19 +1,20 @@
+<div class = "deco">
 <?php
     // index.php
     session_start();
     if(isset($_SESSION) AND !empty($_SESSION['ID']))
     {
-      echo "Bonjour ". $_SESSION['nom'];
+      echo  $_SESSION['nom'];
     }
     
 ?>
-
+<br>
 <?php
     if(isset($_SESSION) AND !empty($_SESSION['ID']))
     {
 ?>
 
-<div class = "deco">
+
     <a href="deconnexion.php">SE DECONNECTER</a>
 </div>
 

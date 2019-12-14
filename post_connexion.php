@@ -30,6 +30,7 @@
                 $_SESSION = array(
                     'ID' => $result['ID'],
                     'nom' => $result['nom']
+                    
                 );
 
                 echo "Vous êtes connecté ! <a href='Test.php'> Accueil</a>";

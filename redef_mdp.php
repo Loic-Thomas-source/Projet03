@@ -6,13 +6,13 @@
     extract($_GET);
 
     if(
-        !empty($Username) AND !empty($token)
+        !empty($ID) AND !empty($token)
     )
     {
-        $sql = "SELECT Username FROM membres
-                WHERE Username = :Username AND token = :token";
+        $sql = "SELECT ID FROM membres
+                WHERE ID = :ID AND token = :token";
         $query = $bdd -> prepare($sql);
-        $query -> bindValue(":Username", $Username, PDO::PARAM_STR);
+        $query -> bindValue(":ID", $ID, PDO::PARAM_INT);
         $query -> bindValue(":token", $token, PDO::PARAM_STR);
         $query -> execute();
 
@@ -26,15 +26,14 @@
 
                     <div>
                         Nouveau mot de passe* :
-                        <input type="password" name="motdepasse" required>
-                    </div>
-                    <div>
+                        <input type="password" name="motdepasse" required> <br>
+                    
                         Confirmation* :  
-                        <input type="password" name="motdepasse_rep" required>
-                    </div>
-                    <input type="text" name="Username" value="<?= $Username ?>">
+                        <input type="password" name="motdepasse_rep" required> <br>
+                    
+                        <input type="hidden" name="ID" value="<?= $ID ?>">
 
-                    <div>
+                    
                         <button type="submit">Envoyer</button>
                     </div>
 

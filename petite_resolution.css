@@ -10,6 +10,13 @@ hr /* Ligne noir de séparation */
     border: none; /*on supprime le style par défaut*/
 }
 
+body 
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 div
 {
     float: none;

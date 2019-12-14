@@ -6,38 +6,38 @@
     extract($_POST);
 
     // A vérifier le formulaire
-    if(!empty($Username))
+    if(!empty($username))
     {
         // B vérifier si username est dans la base
         $sql = "SELECT ID FROM membres
-                WHERE Username = :Username";
+                WHERE username = :username";
         $query = $bdd -> prepare($sql);
-        $query -> bindValue(":Username", $Username, PDO::PARAM_STR);
+        $query -> bindValue(":username", $username, PDO::PARAM_STR);
         $query -> execute();
 
         $result = $query -> fetch();
         if(!empty($result))
         {
-            // C afficher un message 'On vous envoie un mail'
-            $id = $result['ID'];
-            $token = md5( uniqid( rand(), true ) );
+            // C afficher un message 'On vous envoie un formulaire'
+            $ID = $result['ID'];
+            $token = uniqid( rand(), true ) ;
 
             $sql = "UPDATE membres
                     SET token = :token
-                    WHERE Username = :Username";
+                    WHERE ID = :ID";
             $query = $bdd -> prepare($sql);
-			$query -> bindValue(":Username", $Username, PDO::PARAM_STR);
+            $query -> bindValue(":ID", $ID, PDO::PARAM_INT);
 			$query -> bindValue(":token", $token, PDO::PARAM_STR);
 			$query -> execute();
 
-            echo "On vous renvoie vers un  ";
-            echo "<a href='redef_mdp.php?Username=$Username&token=$token'>LIEN</a>";
+            echo "On vous renvoie vers un formulaire  ";
+            echo "<a href='redef_mdp.php?ID=$ID&token=$token'>LIEN</a>";
             // $_GET['id'] ==> ?id=
             // $_GET['token'] ==> &token=
         }
         else
         {
-            echo "Username invalide <a href='javascript:history.back()'>Retour</a>";
+            echo "username invalide <a href='javascript:history.back()'>Retour</a>";
         }
 
     }
