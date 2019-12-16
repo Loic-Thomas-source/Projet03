@@ -2,23 +2,22 @@
 <?php
     // index.php
     session_start();
-    if(isset($_SESSION) AND !empty($_SESSION['ID']))
+    if(isset($_SESSION) AND !empty($_SESSION['ID']) AND !empty($_SESSION['prenom']))
     {
-      echo  $_SESSION['nom'];
+      echo  $_SESSION['nom']. $_SESSION['prenom'];
     }
     
 ?>
 <br>
 <?php
-    if(isset($_SESSION) AND !empty($_SESSION['ID']))
+    if(isset($_SESSION) AND !empty($_SESSION['ID']) AND !empty($_SESSION['prenom']))
     {
 ?>
 
 
-    <a href="deconnexion.php">SE DECONNECTER</a>
+    <a href="deconnexion.php"><button type="submit">SE DECONNECTER</button> </a>
 </div>
 
->
 <?php
     }
     else
@@ -27,10 +26,9 @@
 
 <center>
 <div>
-    <a href="inscription.php">S'INSCRIRE</a>
-</div>
-<div>
-    <a href="connexion.php">SE CONNECTER</a>
+    <a href="inscription.php"><button type="submit">S'INSCRIRE</button> </a> <br>
+
+    <a href="connexion.php"><button type="submit">SE CONNECTER</button> </a>
 </div> </center>
 <?php
     }
@@ -88,25 +86,29 @@
     </section>
     
     <section class = "grille"> <!-- On crée un tableau -->
-        <article> <img src = "protectpeople1.png" alt="" /> <p> <a href = "protectpeople.html">Lire la suite </a></p>
+        <article> <img src = "protectpeople1.png" alt="" /> 
+        <p> <a href = "protectpeople.php"><button type="submit">Lire la suite</button> </a></p>
             <p> Protectpeople finance la solidarité nationale.
             Nous appliquons le principe édifié par la Sécurité sociale française en 1945 : permettre à chacun de 
             bénéficier d’une <br/>protection sociale, ouvert à tous.</p> </article>
 
-        <article> <img src = "CDE1.png" alt="" /> <p> <a href = "CDE.html">Lire la suite </a></p> 
+        <article> <img src = "CDE1.png" alt="" /> 
+        <p> <a href = "CDE.php"><button type="submit">Lire la suite</button> </a></p> 
             <p> La CDE (Chambre Des Entrepreneurs)
             accompagne les entreprises dans
             leurs démarches de formation. 
             Son président est élu pour 3 ans par ses pairs, chefs d’entreprises   <br/>et présidents  des CDE.</p></article>
 
-        <article> <img src = "Dsa_france1.png" alt="" /> <p> <a href = "DSA.html">Lire la suite</a></p> 
+        <article> <img src = "Dsa_france1.png" alt="" /> 
+        <p> <a href = "DSA.php"><button type="submit">Lire la suite</button> </a></p> 
             <p> Dsa France accélère la 
             croissance du territoire et s’engage 
             avec les collectivités territoriales.
             Nous accompagnons les entreprises dans les étapes par clés de leur évolution.  <br/>
             Notre philosophie : s’adapter à chaque entreprise.</p></article>
 
-        <article> <img src = "formationetco1.png" alt="" /> <p> <a href = "formation.html">Lire la suite</a></p> 
+        <article> <img src = "formationetco1.png" alt="" />
+        <p> <a href = "formation.php"><button type="submit">Lire la suite</button> </a></p> 
             <p> Formation&co est
             une association française présente sur
             tout le territoire.

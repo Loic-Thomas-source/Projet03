@@ -12,7 +12,7 @@
     {
         if($motdepasse === $motdepasse_rep)
         {
-            $motdepasse = md5($motdepasse);
+            
 
             $sql = "UPDATE membres
                     SET motdepasse = :motdepasse, token = NULL

@@ -6,13 +6,14 @@
     extract($_POST);
 
     // A vérifier le formulaire
-    if(!empty($username))
+    if(!empty($username) AND !empty($reponse))
     {
-        // B vérifier si username est dans la base
+        // B vérifier si username et réponse secrète est dans la base
         $sql = "SELECT ID FROM membres
-                WHERE username = :username";
+                WHERE username = :username AND reponse = :reponse";
         $query = $bdd -> prepare($sql);
         $query -> bindValue(":username", $username, PDO::PARAM_STR);
+        $query -> bindValue(":reponse", $reponse, PDO::PARAM_STR);
         $query -> execute();
 
         $result = $query -> fetch();
@@ -30,14 +31,14 @@
 			$query -> bindValue(":token", $token, PDO::PARAM_STR);
 			$query -> execute();
 
-            echo "On vous renvoie vers un formulaire  ";
+            echo "On vous renvoie vers un formulaire";
             echo "<a href='redef_mdp.php?ID=$ID&token=$token'>LIEN</a>";
             // $_GET['id'] ==> ?id=
             // $_GET['token'] ==> &token=
         }
         else
         {
-            echo "username invalide <a href='javascript:history.back()'>Retour</a>";
+            echo "Username où réponse secrète invalide <a href='javascript:history.back()'>Retour</a>";
         }
 
     }

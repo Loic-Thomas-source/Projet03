@@ -1,4 +1,9 @@
 h1,h2,h3,p /* Utilisation de la police Comic Sans MS */
 {
-    font-family: "Comic Sans MS" , serif;
+    font-family: "Time New Roman" , serif;
+}
+
+.deco /* On mais déconnecter à droite */
+{
+    float: right;
 }

@@ -29,9 +29,9 @@
                 session_start();
                 $_SESSION = array(
                     'ID' => $result['ID'],
-                    'nom' => $result['nom']
-                    
-                );
+                    'nom' => $result['nom'],
+                    'prenom' => $result['prenom']
+                    );
 
                 echo "Vous êtes connecté ! <a href='Test.php'> Accueil</a>";
                 

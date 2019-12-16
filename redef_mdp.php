@@ -5,7 +5,8 @@
 
     extract($_GET);
 
-    if(
+    if
+    (
         !empty($ID) AND !empty($token)
     )
     {
