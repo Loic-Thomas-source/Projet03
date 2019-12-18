@@ -57,7 +57,8 @@ article
 p /* On aligne le texte à droite de l'image */
 {
     float:right;   
-    margin-right: 80px;    
+    margin-right: 80px; 
+     
 }
 
 p, li /* redimension de la police */
@@ -65,8 +66,5 @@ p, li /* redimension de la police */
     font-size: 107%;
 }
 
-.deco /* On mais déconnecter à droite */
-{
-    float: right;
-}
+
 

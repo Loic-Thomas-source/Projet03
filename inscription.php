@@ -27,6 +27,7 @@
         Répétition mdp* : <input type="password" name="motdepasse_rep" required> <br>
 
         Question secrète* : <input type="text" name="question" required> <br>
+                           
 
         Réponse à question secrète* : <input type="text" name="reponse" required> <br>
     

@@ -7,3 +7,17 @@ h1,h2,h3,p /* Utilisation de la police Comic Sans MS */
 {
     float: right;
 }
+
+.conteneur /* on mets en place un tableau */
+{
+    border: 2px solid black;
+    padding: 5px;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    width : 99%;
+    
+    
+}
+

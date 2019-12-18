@@ -1,25 +1,17 @@
 /* Sur tous types d'écran */
 @media all and (max-device-width: 1280px)
 {
+header
+{
+    float: center;
+}
+
 hr /* Ligne noir de séparation */
 {
     margin: auto;
-    width: 200%;
     height: 2px;
     background-color: rgb(12, 12, 11);
     border: none; /*on supprime le style par défaut*/
-}
-
-body 
-{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-div
-{
-    float: none;
 }
 
 .grille
@@ -27,9 +19,16 @@ div
     flex-direction:column;
 }
 
-h1 /* On aligne h1 */
+h1,h2 /* On aligne h1 */
 {
     text-align: center; 
+    margin-right: auto;
+}
+
+.p1, p
+{
+    text-align: center; 
+    margin-right: auto;
 }
 
 img
@@ -39,21 +38,13 @@ img
     display: block;
 }
 
-.présentation
-{
-    text-align: center;
-    border: none;
-}
-
-html
-{
-    height: auto ;
-    width: auto;
-}
 
 p, li /* redimension de la police */
 {
     font-size: 107%;
 }
+
+
+
 
 }

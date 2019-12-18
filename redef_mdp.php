@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <link rel="stylesheet" href="accueil.css" />
+        <title> connexion </title>
+    </head>
+   
+    <body>
 <?php
     // redef_mdp.php
 
@@ -25,7 +34,7 @@
 
                 <form action="post_redef_mdp.php" method="POST">
 
-                    <div>
+            <center><div>
                         Nouveau mot de passe* :
                         <input type="password" name="motdepasse" required> <br>
                     
@@ -36,7 +45,7 @@
 
                     
                         <button type="submit">Envoyer</button>
-                    </div>
+            </center></div>
 
                 </form>
 
@@ -44,7 +53,7 @@
         }
         else
         {
-            echo "Erreur fatale";
+            echo "Erreur fatale 2";
         }
     }
     else
@@ -52,3 +61,5 @@
         echo "Erreur fatale";
     }
 ?>
+    </body>
+</html>

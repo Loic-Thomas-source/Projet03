@@ -12,6 +12,8 @@
     define("PASSWORD", "");      // mot de passe
     define("QUESTION", "");      // question secrète
     define("REPONSE", "");       // réponse secrète
+    define("CHOIXL", "");          // Like
+    define("CHOIXD", "");       // Dislike 
     define("DATE_INSCRIPTION", "");    // date d'inscription
 
     $db_options = array(

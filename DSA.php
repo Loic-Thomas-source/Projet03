@@ -1,41 +1,21 @@
-<div class = "deco">
 <?php
-    // index.php
-    session_start();
-    if(isset($_SESSION) AND !empty($_SESSION['ID']))
-    {
-      echo  $_SESSION['nom'].$_SESSION['prenom'];
-    }
-    
-?>
-<br>
-<?php
-    if(isset($_SESSION) AND !empty($_SESSION['ID']) AND !empty($_SESSION['prenom']))
-    {
-?>
+    // post_mdp_oublie.php
 
-
-    <a href="deconnexion.php"><button type="submit">SE DECONNECTER</button> </a>
-</div>
-
-<?php
-    }
-    else
-    {
-?>
-<?php
-    }
+    include_once("secur_connect.php")
 ?>
 <!DOCTYPE html>
 <html>
 <header>
     <meta charset = "utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style_protect.css" />
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
+     <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
     <title>DSA_France</title>
     
     <div ID="logo">
             <p>
-                <img src="logo_mini.jpg" alt="" />
+            <a href="test.php"><img src="logo_mini.jpg" alt="" /></a>
             </p>
     </div>
 </header>

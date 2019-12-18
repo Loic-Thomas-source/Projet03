@@ -15,7 +15,7 @@
 <form action="post_connexion.php" method="POST">
 
     <div>
-        Username* : <input type="Username" name="username" required > <br>
+        Username* : <input type="Username" name="username" required> <br>
     
 
         Mot de passe* : <input type="password" name="motdepasse" required> <br>

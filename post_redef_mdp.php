@@ -15,15 +15,17 @@
             
 
             $sql = "UPDATE membres
-                    SET motdepasse = :motdepasse, token = NULL
+                    SET motdepasse = :motdepasse, motdepasse_rep = :motdepasse_rep, token = NULL
                     WHERE ID = :ID";
 
             $query = $bdd -> prepare($sql);
             $query -> bindValue(":ID", $ID, PDO::PARAM_INT);
             $query -> bindValue(":motdepasse", $motdepasse, PDO::PARAM_STR);
+            $query -> bindValue(":motdepasse_rep", $motdepasse_rep, PDO::PARAM_STR);
             $query -> execute();
 
-            echo "Le mot de passe est modifié";
+            echo "Le mot de passe est modifié ! <a href='Accueil.php'> Accueil</a>";
+            header("Refresh: 1;url=accueil.php");
 
         }
         else

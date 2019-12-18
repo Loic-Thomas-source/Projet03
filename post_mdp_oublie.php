@@ -6,39 +6,34 @@
     extract($_POST);
 
     // A vérifier le formulaire
-    if(!empty($username) AND !empty($reponse))
+    if(!empty($username) AND (!empty($question)))
     {
-        // B vérifier si username et réponse secrète est dans la base
+        // B vérifier si username est dans la base
         $sql = "SELECT ID FROM membres
-                WHERE username = :username AND reponse = :reponse";
+                WHERE username = :username";
         $query = $bdd -> prepare($sql);
         $query -> bindValue(":username", $username, PDO::PARAM_STR);
-        $query -> bindValue(":reponse", $reponse, PDO::PARAM_STR);
         $query -> execute();
 
         $result = $query -> fetch();
+
+        
+        $req = $bdd->prepare('SELECT ID FROM membres WHERE question = :question');
+        $req->execute(array($_SESSION['question']));
+     
+        $donnees = $req->fetch();
+
+
         if(!empty($result))
         {
-            // C afficher un message 'On vous envoie un formulaire'
-            $ID = $result['ID'];
-            $token = uniqid( rand(), true ) ;
-
-            $sql = "UPDATE membres
-                    SET token = :token
-                    WHERE ID = :ID";
-            $query = $bdd -> prepare($sql);
-            $query -> bindValue(":ID", $ID, PDO::PARAM_INT);
-			$query -> bindValue(":token", $token, PDO::PARAM_STR);
-			$query -> execute();
-
-            echo "On vous renvoie vers un formulaire";
-            echo "<a href='redef_mdp.php?ID=$ID&token=$token'>LIEN</a>";
-            // $_GET['id'] ==> ?id=
-            // $_GET['token'] ==> &token=
+            
+            echo "<a href='mdp_oublie1.0.php?'></a>";
+            header("Refresh: 5;url=mdp_oublie1.0.php");
+           
         }
         else
         {
-            echo "Username où réponse secrète invalide <a href='javascript:history.back()'>Retour</a>";
+            echo "Username invalide <a href='javascript:history.back()'>Retour</a>";
         }
 
     }

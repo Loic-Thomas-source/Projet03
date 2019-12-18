@@ -1,44 +1,16 @@
-<div class = "deco">
 <?php
-    // index.php
-    session_start();
-    if(isset($_SESSION) AND !empty($_SESSION['ID']) AND !empty($_SESSION['prenom']))
-    {
-      echo  $_SESSION['nom']. $_SESSION['prenom'];
-    }
-    
-?>
-<br>
-<?php
-    if(isset($_SESSION) AND !empty($_SESSION['ID']) AND !empty($_SESSION['prenom']))
-    {
-?>
+    // post_mdp_oublie.php
 
-
-    <a href="deconnexion.php"><button type="submit">SE DECONNECTER</button> </a>
-</div>
-
-<?php
-    }
-    else
-    {
-?>
-
-<center>
-<div>
-    <a href="inscription.php"><button type="submit">S'INSCRIRE</button> </a> <br>
-
-    <a href="connexion.php"><button type="submit">SE CONNECTER</button> </a>
-</div> </center>
-<?php
-    }
+    include_once("secur_connect.php")
 ?>
 
 <!DOCTYPE html>
 <html>
 <header>
     <meta charset = "utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_connect.css" />
     <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
      <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
     <title>GBAF</title>
@@ -57,14 +29,14 @@
 <body>
 	<section>
     <h1>LE GBAF</h1> <!-- Premier titre -->
-    <div class = "présentation"><p>Le GBAF est le représentant de la profession bancaire et des assureurs sur tous
+    <div class = "présentation"><p1>Le GBAF est le représentant de la profession bancaire et des assureurs sur tous
             les axes de la réglementation financière française. Sa mission est de promouvoir
             l'activité bancaire à l’échelle nationale.<br> C’est aussi un interlocuteur privilégié des
             pouvoirs publics.Pour remédier à cela, le GBAF souhaite proposer aux salariés des grands groupes
             français un point d’entrée unique, répertoriant un grand nombre d’informations
             sur les partenaires et acteurs du groupe ainsi que sur les produits et services
             bancaires et financiers.
-            Chaque salarié pourra ainsi poster un commentaire et donner son avis.</p></div>
+            Chaque salarié pourra ainsi poster un commentaire et donner son avis.</p1></div>
         <a>
             <img src = "image.jpg" width="1890px" height="300px" alt= "illustration" /> <!-- Photo illustration -->
         </a>
@@ -97,7 +69,7 @@
             <p> La CDE (Chambre Des Entrepreneurs)
             accompagne les entreprises dans
             leurs démarches de formation. 
-            Son président est élu pour 3 ans par ses pairs, chefs d’entreprises   <br/>et présidents  des CDE.</p></article>
+            Son président est élu pour 3 ans par ses pairs, chefs d’entreprises   <br/>et présidents  des CDE.</p> </article>
 
         <article> <img src = "Dsa_france1.png" alt="" /> 
         <p> <a href = "DSA.php"><button type="submit">Lire la suite</button> </a></p> 
@@ -112,7 +84,8 @@
             <p> Formation&co est
             une association française présente sur
             tout le territoire.
-            Nous proposons à des personnes issues de tout milieu de devenir entrepreneur grâce à un crédit<br/> et un accompagnement
+            Nous proposons à des personnes issues de tout milieu de devenir entrepreneur grâce à un crédit<br/> et un 
+            accompagnement
             professionnel et personnalisé. </p></article>
 
 
