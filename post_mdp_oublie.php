@@ -4,9 +4,10 @@
     include_once("inc_bdd.php");
 
     extract($_POST);
+    
 
     // A vérifier le formulaire
-    if(!empty($username) AND (!empty($question)))
+    if(!empty($username))
     {
         // B vérifier si username est dans la base
         $sql = "SELECT ID FROM membres
@@ -18,17 +19,11 @@
         $result = $query -> fetch();
 
         
-        $req = $bdd->prepare('SELECT ID FROM membres WHERE question = :question');
-        $req->execute(array($_SESSION['question']));
-     
-        $donnees = $req->fetch();
-
-
         if(!empty($result))
         {
             
             echo "<a href='mdp_oublie1.0.php?'></a>";
-            header("Refresh: 5;url=mdp_oublie1.0.php");
+            header("Refresh: 0;url=mdp_oublie1.0.php");
            
         }
         else

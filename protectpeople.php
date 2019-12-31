@@ -52,6 +52,7 @@
                
                <form action="post_like_dislike.php" method="POST">
                     <p>Like/Dislike :</p>
+                    
                     <div>
                         <input type="radio" id="3"
                         name="aime" value="aime">

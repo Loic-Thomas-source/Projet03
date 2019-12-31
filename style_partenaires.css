@@ -21,3 +21,16 @@ h1,h2,h3,p /* Utilisation de la police Comic Sans MS */
     
 }
 
+span
+{
+    display: flex;
+    float: right;
+    margin-top: -3%;
+}
+
+form
+{
+    float: right;
+    margin-top: -8%;
+    margin-right: 7%;
+}

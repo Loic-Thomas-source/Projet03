@@ -15,7 +15,7 @@
 
     <div>
                                             
-        Question secrète* : <input type="text" name="question" id="question" value="<?php echo $donnees['question']; ?>"/>
+        Question secrète* : <input type="text" name="ID" value="" readonly >
                             
         
 

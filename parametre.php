@@ -26,7 +26,7 @@
 
     <body>
 	<section>
-    <h1>Paramètre de compte</h1> <!-- Premier titre -->
+        <h1>Paramètre de compte</h1> <!-- Premier titre -->
     </section>
     </body>
 
@@ -35,19 +35,20 @@
 try
 {
     
-    $bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
      
-    if (isset($_SESSION['nom']) AND (isset($_SESSION['prenom'] )))
+    if (isset($_SESSION['ID']) AND (isset($_SESSION['prenom'] )))
     {
-        $req = $bdd->prepare('SELECT username FROM membres WHERE nom = :nom, prenom = :prenom, username = :username, motdepasse = :motdepasse, motdepasse_rep = :motdepasse_rep, question = :question, reponse = :reponse');
-        $req -> execute( $_SESSION = array(
-                        'nom' => $_POST['nom'],
-                        'prenom' => $_POST['prenom'],
-                        'username' => $_POST['username'],
-                        'motdepasse' => $_POST['motdepasse'],
-                        'motdepasse_rep' => $_POST['motdepassse_rep'],
-                        'question' => $_POST['question'],
-                        'reponse' => $_POST['reponse']
+        $req = $bdd->prepare('SELECT ID FROM membres 
+        WHERE nom = :nom, prenom = :prenom, username = :username, motdepasse = :motdepasse, motdepasse_rep = :motdepasse_rep, question = :question, reponse = :reponse');
+        
+        $req -> execute( array(
+                        'nom' => $nom,
+                        'prenom' => '$prenom',
+                        'username' => '$username',
+                        'motdepasse' => '$motdepasse',
+                        'motdepasse_rep' => '$motdepassse_rep',
+                        'question' => '$question',
+                        'reponse' => '$reponse'
                     ));
      
         $donnees = $req->fetch();
@@ -113,7 +114,7 @@ try
          <br>
         <?php
 
-            header("Refresh: 1;url=test.php");
+            
          
          
     }

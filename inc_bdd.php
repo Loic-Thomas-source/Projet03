@@ -14,7 +14,7 @@
     define("REPONSE", "");       // réponse secrète
     define("CHOIXL", "");          // Like
     define("CHOIXD", "");       // Dislike 
-    define("DATE_INSCRIPTION", "");    // date d'inscription
+    define("PARTENAIRES", "");    // partenaires
 
     $db_options = array(
 
@@ -29,7 +29,7 @@
 
     try
     {
-        $bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
+        $bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '', $db_options);
     }
     catch(Exception $e)
     {

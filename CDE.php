@@ -1,7 +1,7 @@
 <?php
     // post_mdp_oublie.php
 
-    include_once("secur_connect.php")
+    include_once("secur_connect.php");
 ?>
 
 <!DOCTYPE html>

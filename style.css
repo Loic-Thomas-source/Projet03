@@ -34,18 +34,6 @@ h1,h2,h3,p /* Utilisation de la police Time New Roman */
     font-family:"Time New Roman" , serif;
 }
 
-.grille /* on mets en place un tableau */
-{
-    border: 2px solid black;
-    padding: 5px;
-    display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-rows: 1fr;
-    grid-gap: 10px;
-    width : 99%
-    
-}
-
 article
 {
     border: 2px solid black;
@@ -57,7 +45,7 @@ article
 p /* On aligne le texte à droite de l'image */
 {
     float:right;   
-    margin-right: 80px; 
+    margin-right: 180px;
      
 }
 
@@ -66,5 +54,18 @@ p, li /* redimension de la police */
     font-size: 107%;
 }
 
+span
+{
+    margin-left: 90%;
+}
 
-
+td,tr
+{
+    border: 2px solid black;
+    padding: 5px;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    width : 99%
+}

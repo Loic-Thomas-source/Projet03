@@ -23,15 +23,17 @@
     }
     
 ?>
-
-<center><p> <a href = "parametre.php"><img src="profil.jpg" alt=""/></a>
+<br>
+<center> <a href = "parametre.php"><img src="profil.jpg" alt=""/></a>
 <?php
     if($connected)
     
     {
-        echo  $_SESSION['nom']." ".$_SESSION['prenom'];
+        echo  $_SESSION['nom']." ".$_SESSION['prenom'];   
 ?>
-</p></center>
+
+</center>
+<br>
 
 
     <a href="deconnexion.php"><button type="submit">SE DECONNECTER</button> </a>

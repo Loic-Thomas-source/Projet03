@@ -15,10 +15,15 @@
 
     <div>
         Username* : <input type="text" name="username" required> <br> 
+<?php 
+        $username= $_POST['question'];
+        echo $question;
+?>
 
         
 
         <br> <button type="submit">Envoyer</button>
+
 
         
 
